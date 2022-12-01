@@ -10,7 +10,7 @@ let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
 
-let domainGenerator = (arr1, arr2, arr3) => {
+const domainGenerator = (arr1, arr2, arr3) => {
   for (var i = 0; i < pronoun.length; i++) {
     for (var j = 0; j < adj.length; j++) {
       for (var r = 0; r < noun.length; r++) {
@@ -19,4 +19,5 @@ let domainGenerator = (arr1, arr2, arr3) => {
     }
   }
 };
+
 domainGenerator(pronoun, adj, noun);
